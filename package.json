@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-vue-express",
+  "version": "1.0.0",
+  "description": "A locker management system with locking and unlocking functionalities, built with Vue.js for the front-end and Node.js/Express for the back-end. The application allows users to interact with lockers, locking or unlocking them, while the back-end manages the state and interactions. The project includes a RESTful API for communication between the front-end and back-end, with data stored in a database.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js", 
+    "build": "npm run build --prefix frontend",
+    "frontend-start": "npm run serve --prefix frontend",
+    "backend-start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
