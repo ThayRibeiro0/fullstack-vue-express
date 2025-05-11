@@ -1,0 +1,3 @@
+# Fullstack Vue Express Locker Management System
+
+A locker management system with locking and unlocking functionalities, built with Vue.js for the front-end and Node.js/Express for the back-end. The application allows users to interact with lockers, locking or unlocking them, while the back-end manages the state and interactions. The project includes a RESTful API for communication between the front-end and back-end, with data stored in a database.
