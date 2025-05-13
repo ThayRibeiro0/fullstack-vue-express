@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "build": "npm run build --prefix frontend",
+    "build": "npm run build --prefix client && npm run build --prefix server",
     "frontend-start": "npm run serve --prefix frontend",
     "backend-start": "node server/index.js",
     "dev": "npm install && npm install axios --prefix client && npm install --save-dev @types/express @types/cors --prefix server && concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
