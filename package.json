@@ -6,12 +6,16 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js", 
+    "start": "node server/index.js",
     "build": "npm run build --prefix frontend",
     "frontend-start": "npm run serve --prefix frontend",
-    "backend-start": "node server/index.js"
+    "backend-start": "node server/index.js",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }
