@@ -10,12 +10,13 @@
     "build": "npm run build --prefix frontend",
     "frontend-start": "npm run serve --prefix frontend",
     "backend-start": "node server/index.js",
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+    "dev": "npm install && npm install axios --prefix client && npm install --save-dev @types/express @types/cors --prefix server && concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
     "concurrently": "^9.1.2"
   }
 }
