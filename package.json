@@ -5,18 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install --prefix client && npm run build --prefix client",
     "start": "node server/index.js",
-    "build": "npm run build --prefix client && npm run build --prefix server",
-    "frontend-start": "npm run serve --prefix frontend",
-    "backend-start": "node server/index.js",
-    "dev": "npm install && npm install axios --prefix client && npm install --save-dev @types/express @types/cors --prefix server && npm install vue-tsc --save-dev --prefix client && npm install --prefix client && concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/tsconfig": "^0.7.0",
     "concurrently": "^9.1.2",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10"

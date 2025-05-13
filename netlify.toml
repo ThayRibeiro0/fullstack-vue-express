@@ -1,11 +1,11 @@
 [build]
-  command = "npm run build"  
-  publish = "client/dist"    
-  
+  command = "npm run build"
+  publish = "client/dist"
+
+[functions]
+  directory = "server/functions"
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
-
-[functions]
-  directory = "server/functions"  # Diretório das funções serverless
